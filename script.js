@@ -1,3 +1,23 @@
+let tempData = [];
+let labels = [];
+
+const ctx = document.getElementById('tempChart').getContext('2d');
+
+const tempChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: labels,
+    datasets: [{
+      label: 'Temperature (°C)',
+      data: tempData,
+      borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+
 function updateData() {
   let temp = Math.floor(Math.random() * 40);
   let humidity = Math.floor(Math.random() * 100);
@@ -8,6 +28,7 @@ function updateData() {
   tempElement.innerText = temp + " °C";
   document.getElementById("humidity").innerText = humidity + " %";
 
+  // 🔥 ALERT SYSTEM
   if (temp > 30) {
     fireElement.innerText = "🔥 Fire Risk!";
     tempElement.style.color = "red";
@@ -16,7 +37,7 @@ function updateData() {
     tempElement.style.color = "white";
   }
 
-  // Graph logic (same as before)
+  // 📊 GRAPH UPDATE
   if (tempData.length > 10) {
     tempData.shift();
     labels.shift();
