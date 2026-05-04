@@ -16,7 +16,7 @@ A modern IoT dashboard that simulates real-time sensor data with a clean UI and 
 - Chart.js
 
 ## 📸 Preview
-![Dashboard Screenshot](https://raw.githubusercontent.com/shivamvvats/iot-dashboard/main/screenshot.png)
+<img src="screenshot.png" width="600"/>
 
 ## 🚀 How to Run
 1. Download or clone this repository
