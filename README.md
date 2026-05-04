@@ -22,7 +22,8 @@ A modern IoT dashboard that simulates real-time sensor data with a clean UI and 
 1. Download or clone this repository
 2. Open `index.html` in your browser
 3. View live sensor simulation
-
+## 🌐 Live Demo
+👉 [Click here to view project](https://stupendous-melomakarona-988fc1.netlify.app)
 ## 📌 Project Goal
 This project was built to demonstrate IoT data visualization and frontend development skills.
 
